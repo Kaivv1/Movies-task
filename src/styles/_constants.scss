@@ -1,5 +1,7 @@
-$font-primary: "Roboto", sans-serif;
-$font-secondary: "Lato", sans-serif;
+@import "fonts";
+
+$font-roboto: "Roboto", sans-serif;
+$font-lato: "Lato", sans-serif;
 $font-times: "Times New Roman", serif;
 
 $font-size-logo: 42px;

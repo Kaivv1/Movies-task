@@ -1,6 +1,7 @@
 import "./styles/main.scss";
+
 const App = () => {
-  return <></>;
+  return <div></div>;
 };
 
 export default App;
