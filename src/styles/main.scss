@@ -1,0 +1,16 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/bootstrap";
+@import "constants";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  transition: color 0.3s, background-color 0.3s;
+  font-family: $font-primary;
+  background-color: $color-secondary;
+}
