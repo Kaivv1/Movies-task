@@ -1,0 +1,7 @@
+@import "../../styles/constants";
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: $padding-md;
+}

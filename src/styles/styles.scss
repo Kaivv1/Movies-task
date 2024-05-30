@@ -4,14 +4,25 @@
 @import "constants";
 @import "fonts";
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  transition: color 0.3s, background-color 0.3s;
   font-family: $font-roboto;
   background-color: $color-secondary;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
