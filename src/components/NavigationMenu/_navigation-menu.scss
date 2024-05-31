@@ -36,6 +36,7 @@ nav {
         display: flex;
         max-height: 0;
         overflow: hidden;
+        z-index: 100;
         top: 2.5rem;
         left: -1.7rem;
         flex-direction: column;
@@ -64,7 +65,7 @@ nav {
         transition: all $transition;
         height: auto;
         max-height: 12rem;
-        padding: $padding-md;
+        padding: $padding;
         li {
           span {
             opacity: 1;

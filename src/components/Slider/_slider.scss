@@ -1,0 +1,19 @@
+.custom-slider {
+  .carousel {
+    .carousel-indicators {
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 100%;
+          max-height: 35rem;
+          aspect-ratio: 16 / 9;
+          object-fit: fill;
+        }
+      }
+    }
+  }
+}

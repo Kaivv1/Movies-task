@@ -5,17 +5,25 @@ $font-lato: "Lato", sans-serif;
 $font-times: "Times New Roman", serif;
 
 $font-size-logo: 42px;
+$font-lg-heading: 36px;
+$font-md-heading: 24px;
+$font-sm-heading: 18px;
+$font-news-heading: 26px;
+
+$font-muted-paragraph: 14px;
 
 $color-primary: #28b8d2;
 $color-secondary: #303030;
 
-$bg-color-section: #fafafa;
-$font-color-section: #1a1a1a;
-$font-color-section-hover: #27b8d1;
-$color-font-news: #999;
+$bg-light: #fafafa;
+$color-dark: #1a1a1a;
+$color-gray: #999;
+$color-popular--hover: #27b8d1;
 
-$padding-sm: 0.5rem;
-$padding-md: 1rem;
-$padding-lg: 2rem;
+$padding: 1rem;
+
+$padding-header: 1rem 2rem;
+$padding-footer: 1rem 2rem;
+$padding-main: 1.5rem;
 
 $transition: 0.2s ease-in-out;

@@ -1,0 +1,16 @@
+@import "../../styles/constants";
+footer {
+  padding: $padding-footer;
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  span {
+    transition: color $transition;
+    &:nth-child(3) {
+      &:hover {
+        color: $color-primary;
+        cursor: pointer;
+      }
+    }
+  }
+}

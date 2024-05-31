@@ -1,0 +1,23 @@
+@import "../../styles/constants";
+
+.logo {
+  font-size: $font-size-logo;
+  h1 {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: $color-secondary;
+    span {
+      display: flex;
+      align-items: center;
+      &:first-child {
+        color: #fff;
+        justify-content: center;
+        background-color: $color-primary;
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+}

@@ -1,15 +1,17 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
 @import "bootstrap/scss/bootstrap";
 @import "constants";
 @import "fonts";
 
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  // &:focus {
+  //   outline-color: $color-primary;
+  //   outline-style: solid auto;
+  //   outline-width: 2px;
+  // }
 }
 
 body {
@@ -20,7 +22,7 @@ body {
 
 .page-container {
   width: 100%;
-  max-width: 70rem;
+  max-width: 75rem;
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr auto;

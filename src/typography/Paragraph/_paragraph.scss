@@ -1,0 +1,32 @@
+@import "../../styles/constants";
+
+.sub-paragraph {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0;
+  font-family: $font-times;
+
+  @media (max-width: 980px) {
+    font-size: 0.8rem;
+  }
+}
+
+.muted-paragraph {
+  color: $color-gray;
+  font-size: $font-muted-paragraph;
+  margin: 0;
+}
+
+.date-paragraph {
+  color: $color-dark;
+  margin: 0;
+}
+
+.popular-paragraph {
+  color: $color-dark;
+  transition: color $transition;
+  margin: 0;
+  &:hover {
+    color: $color-popular--hover;
+  }
+}
