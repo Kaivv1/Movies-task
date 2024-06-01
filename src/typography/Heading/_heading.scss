@@ -4,14 +4,21 @@
   font-size: $font-lg-heading;
   font-family: $font-lato;
   color: $color-secondary;
+  text-transform: uppercase;
+  font-weight: bold;
   margin: 0;
+  text-align: center;
+
+  @media (max-width: 1000px) {
+    font-size: 1.7rem;
+  }
 }
 
 .medium-heading {
   font-size: $font-md-heading;
   margin: 0;
   text-align: center;
-
+  font-weight: bold;
   @media (max-width: 980px) {
     font-size: 1rem;
   }
@@ -21,7 +28,12 @@
   font-family: $font-times;
   font-size: $font-sm-heading;
   font-style: italic;
+  text-transform: capitalize;
   margin: 0;
+
+  @media (max-width: 1000px) {
+    font-size: 1rem;
+  }
 }
 
 .news-heading {

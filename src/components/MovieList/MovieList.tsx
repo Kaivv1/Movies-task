@@ -12,7 +12,7 @@ for (let i = 0; i < gridMoviesList.length; i += 4) {
 
 const MovieList = () => {
   return (
-    <Container as="div" fluid>
+    <Container as="section" fluid>
       {rows.map((row, i) => (
         <Row key={i}>
           {row.map((movie, y) => (

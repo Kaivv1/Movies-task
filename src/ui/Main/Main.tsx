@@ -1,3 +1,4 @@
+import BestMoviesSection from "../../components/BestMoviesSection/BestMoviesSection";
 import Logo from "../../components/Logo/Logo";
 import MovieList from "../../components/MovieList/MovieList";
 import SearchBar from "../../components/SearchBar/SearchBar";
@@ -13,6 +14,7 @@ const Main = () => {
       </div>
       <Slider />
       <MovieList />
+      <BestMoviesSection />
     </main>
   );
 };

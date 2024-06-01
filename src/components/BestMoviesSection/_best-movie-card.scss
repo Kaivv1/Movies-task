@@ -1,0 +1,51 @@
+@import "../../styles/constants";
+
+.best-card-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: $box-shadow;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    max-height: 22rem;
+    @media (max-width: 555px) {
+      max-height: 16rem;
+      object-fit: fill;
+    }
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem 0rem;
+
+    h3 {
+      @media (max-width: 720px) {
+        font-size: 1.3rem;
+      }
+    }
+    button {
+      border: none;
+      background-color: $color-primary;
+      transition: background-color $transition;
+      padding: 0.5rem 1.3rem;
+      border-radius: 2rem;
+      font-size: 0.9rem;
+      color: #fff;
+      &:hover {
+        background-color: $color-gray;
+      }
+      @media (max-width: 1000px) {
+        padding: 0.4rem 1.1rem;
+        font-size: 0.8rem;
+      }
+      @media (max-width: 720px) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

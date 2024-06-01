@@ -10,7 +10,7 @@ const Slider = () => {
     setIndex(selectedIndex);
   };
   return (
-    <div className="custom-slider">
+    <section className="custom-slider">
       <Carousel
         activeIndex={index}
         onSelect={handleSelect}
@@ -23,7 +23,7 @@ const Slider = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-    </div>
+    </section>
   );
 };
 
