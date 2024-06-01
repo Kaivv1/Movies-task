@@ -1,0 +1,23 @@
+@import "../../styles/constants";
+
+.popular-films-section {
+  background-color: $bg-light;
+  padding: $padding-md;
+  ol {
+    margin: 0;
+    padding-left: 1rem;
+    li {
+      color: $color-dark;
+      transition: color $transition;
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+      &:last-child {
+        margin-bottom: 0rem;
+      }
+      &:hover {
+        color: $color-popular--hover;
+        cursor: pointer;
+      }
+    }
+  }
+}

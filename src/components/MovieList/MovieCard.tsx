@@ -15,7 +15,7 @@ const MovieCard: FC<MovieCardProps> = ({ movie }) => {
   return (
     <div className="movie-card" style={{ backgroundImage: `url(${img})` }}>
       <div className="content">
-        <Heading as="h3">{title}</Heading>
+        <Heading variant="movie-list-heading">{title}</Heading>
         <Paragraph variant="sub">{genre}</Paragraph>
       </div>
       <div className="overlay"></div>

@@ -1,0 +1,9 @@
+.latest-movies-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  // max-width: 50rem;
+  h2 {
+    text-align: start;
+  }
+}

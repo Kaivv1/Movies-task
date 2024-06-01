@@ -4,6 +4,13 @@ footer {
   color: #fff;
   display: flex;
   gap: 1rem;
+
+  @media (max-width: 576px) {
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
   span {
     transition: color $transition;
     &:nth-child(3) {

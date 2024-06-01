@@ -1,13 +1,19 @@
 @import "../../styles/constants";
 
 nav {
+  @media (max-width: 600px) {
+    display: none;
+    opacity: 0;
+  }
   ul {
     display: flex;
+    justify-content: center;
     list-style: none;
     gap: 1.5rem;
     padding: 0;
     margin: 0;
     color: #fff;
+
     li {
       .link {
         transition: color $transition;
@@ -58,6 +64,7 @@ nav {
       }
     }
     .opened {
+      color: $color-primary;
       .arrow {
         transform: rotate(0);
       }
@@ -65,9 +72,10 @@ nav {
         transition: all $transition;
         height: auto;
         max-height: 12rem;
-        padding: $padding;
+        padding: $padding-sm;
         li {
           span {
+            // transform: translateY(0);
             opacity: 1;
           }
         }

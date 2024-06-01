@@ -7,8 +7,10 @@ const BestMoviesSection = () => {
   return (
     <section className="best-movies-section">
       <div className="heading">
-        <Heading as="h2">Best movies online for free</Heading>
-        <Heading as="h6">Most popular movies - watch all movies online</Heading>
+        <Heading variant="lg">Best movies online for free</Heading>
+        <Heading variant="popular-movies-sub-heading">
+          Most popular movies - watch all movies online
+        </Heading>
       </div>
       <div className="best-movies-content">
         {bestMoviesList.map((movie) => (

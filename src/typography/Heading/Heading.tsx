@@ -2,21 +2,30 @@ import { FC, ReactNode } from "react";
 import "./_heading.scss";
 
 type HeadingProps = {
-  as: "h2" | "h3" | "h4" | "h5" | "h6";
+  variant:
+    | "movie-list-heading"
+    | "popular-movies-sub-heading"
+    | "news-headings"
+    | "bubble-heading"
+    | "lg"
+    | "md"
+    | "sm";
   children: ReactNode;
 };
 
-const Heading: FC<HeadingProps> = ({ as, children }) => {
-  const HeadingElement = as;
+const Heading: FC<HeadingProps> = ({ variant, children }) => {
   let className;
 
-  if (as === "h2") className = "large-heading";
-  if (as === "h3") className = "medium-heading";
-  if (as === "h4") className = "news-heading";
-  if (as === "h5") className = "sm-heading";
-  if (as === "h6") className = "sub-heading";
+  if (variant === "movie-list-heading") className = "movie-list-heading";
+  if (variant === "popular-movies-sub-heading")
+    className = "popular-movies-sub-heading";
+  if (variant === "news-headings") className = "news-headings";
+  if (variant === "bubble-heading") className = "bubble-heading";
+  if (variant === "lg") className = "large-heading";
+  if (variant === "md") className = "medium-heading";
+  if (variant === "sm") className = "small-heading";
 
-  return <HeadingElement className={className}>{children}</HeadingElement>;
+  return <h2 className={className}>{children}</h2>;
 };
 
 export default Heading;

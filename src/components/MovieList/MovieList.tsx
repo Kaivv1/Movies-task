@@ -1,18 +1,14 @@
 import { gridMoviesList, Movie } from "../../assets/grid/export";
+import { useGetRows } from "../../hooks/useGetRows";
 import "./_movie-list.scss";
 import MovieCard from "./MovieCard";
 import { Container, Row, Col } from "react-bootstrap";
 
-const rows: Array<Movie[]> = [];
-
-for (let i = 0; i < gridMoviesList.length; i += 4) {
-  const row = gridMoviesList.slice(i, i + 4);
-  rows.push(row);
-}
-
 const MovieList = () => {
+  const { rows } = useGetRows<Movie>(gridMoviesList);
+
   return (
-    <Container as="section" fluid>
+    <Container as="section" fluid className="movies-grid">
       {rows.map((row, i) => (
         <Row key={i}>
           {row.map((movie, y) => (

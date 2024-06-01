@@ -1,0 +1,47 @@
+@import "../../styles/constants";
+
+.hamburger {
+  display: none;
+  position: relative;
+  @media (max-width: 600px) {
+    display: block;
+    color: #fff;
+    .dropdown {
+      list-style: none;
+      position: absolute;
+      display: flex;
+      max-height: 0;
+      overflow: hidden;
+      z-index: 100;
+      top: 2.5rem;
+      left: -5rem;
+      flex-direction: column;
+      background-color: $color-primary;
+      padding: 0;
+      width: 7rem;
+      gap: 0.5rem;
+      transition: all $transition;
+      li {
+        span {
+          opacity: 0;
+          transition: all $transition;
+          &:hover {
+            color: #000;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .opened {
+      transition: all $transition;
+      height: auto;
+      max-height: 25rem;
+      padding: $padding-sm;
+      li {
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

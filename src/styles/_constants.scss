@@ -4,23 +4,25 @@ $font-roboto: "Roboto", sans-serif;
 $font-lato: "Lato", sans-serif;
 $font-times: "Times New Roman", serif;
 
-$font-size-logo: 42px;
-$font-lg-heading: 36px;
-$font-md-heading: 24px;
-$font-sm-heading: 18px;
-$font-news-heading: 26px;
+$size-logo: 42px;
+$size-lg-heading: 36px;
+$size-movie-list-heading: 24px;
+$size-popular-movies-sub-heading: 18px;
+$size-news-headings: 26px;
 
+$font-size-card--sm: 1rem;
+$font-size-card--md: 1.5rem;
 $font-muted-paragraph: 14px;
 
 $color-primary: #28b8d2;
 $color-secondary: #303030;
-
 $bg-light: #fafafa;
 $color-dark: #1a1a1a;
 $color-gray: #999;
 $color-popular--hover: #27b8d1;
 
-$padding: 1rem;
+$padding-sm: 1rem;
+$padding-md: 2rem;
 
 $padding-header: 1rem 2rem;
 $padding-footer: 1rem 2rem;

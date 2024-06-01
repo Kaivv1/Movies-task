@@ -1,0 +1,12 @@
+@import "../../styles/constants";
+
+.news-section {
+  background-color: $bg-light;
+  padding: $padding-md;
+  height: 100%;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}

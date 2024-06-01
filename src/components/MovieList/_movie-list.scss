@@ -1,4 +1,7 @@
-.container-fluid {
-  .row {
+.movies-grid {
+  div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 }

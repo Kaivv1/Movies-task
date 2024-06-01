@@ -1,4 +1,5 @@
 @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/variables";
 @import "constants";
 @import "fonts";
 
@@ -6,12 +7,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-  // &:focus {
-  //   outline-color: $color-primary;
-  //   outline-style: solid auto;
-  //   outline-width: 2px;
-  // }
 }
 
 body {

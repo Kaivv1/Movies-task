@@ -13,7 +13,7 @@ const BestMovieCard: FC<BestMovieCardProps> = ({ movie }) => {
     <div className="best-card-container">
       <img src={img} alt="" />
       <div>
-        <Heading as="h3">{genre}</Heading>
+        <Heading variant="md">{genre}</Heading>
         <button>Watch online</button>
       </div>
     </div>
