@@ -13,8 +13,8 @@ const BestMoviesSection = () => {
         </Heading>
       </div>
       <div className="best-movies-content">
-        {bestMoviesList.map((movie) => (
-          <BestMovieCard movie={movie} />
+        {bestMoviesList.map((movie, i) => (
+          <BestMovieCard movie={movie} key={i} />
         ))}
       </div>
     </section>

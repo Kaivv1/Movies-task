@@ -12,7 +12,6 @@ const Hamburger = () => {
   const closeHamburger = () => setIsOpen(false);
   const dropdownRef = useClickOutside<HTMLDivElement>(closeHamburger);
 
-  console.log(isOpen);
   return (
     <div className="hamburger" ref={dropdownRef}>
       <Menu size="2rem" onClick={toggleHamburger} />

@@ -17,8 +17,8 @@ const Slider = () => {
         interval={4000}
         touch
       >
-        {sliderImages.map(({ img }) => (
-          <Carousel.Item>
+        {sliderImages.map(({ img }, i) => (
+          <Carousel.Item key={i}>
             <img src={img} alt="" />
           </Carousel.Item>
         ))}

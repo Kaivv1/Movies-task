@@ -16,8 +16,8 @@ const PopularFilmsSection = () => {
     <section className="popular-films-section">
       <Heading variant="bubble-heading">Popular films</Heading>
       <ol>
-        {films.map((film) => (
-          <li>{film}</li>
+        {films.map((film, i) => (
+          <li key={i}>{film}</li>
         ))}
       </ol>
     </section>
